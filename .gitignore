@@ -1,0 +1,12 @@
+.env
+.env.*
+node_modules/
+build/
+dist/
+coverage/
+*.log
+*.py[cod]
+__pycache__/
+frontend/inventory-studio-frontend/node_modules/
+frontend/inventory-studio-frontend/build/
+backend/inventory-studio-backend/node_modules/
