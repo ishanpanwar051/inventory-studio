@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: inventory-studio-api
+    env: node
+    rootDir: backend/inventory-studio-backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: FREE_MODE
+        value: "true"
+      - key: ENFORCE_FIREBASE_AUTH
+        value: "false"
